@@ -1,0 +1,48 @@
+<html>
+    <body>
+      <p>Hello,this is Assignment 1 of Day 2!!!</p>
+        <script>
+          //QUESTION 1
+            console.log(1+"2"+"2");         
+                //OUTPUT:122    
+                     //REASON:1 is a numerical value whereas the next two are strings,hence '+' concatenates the values
+            console.log(1+ +"2"+"2");     
+                //OUTPUT:32    
+                     //REASON:The first two values are added(as the second value is prefixed with '+',it supports addition and not concatemnation),the third value is considered string here and concatenated to the value obtained from the first two values
+            console.log(1+ -"1"+"2");       
+                 //OUTPUT:02
+                    //REASON:Second value is evaluated as -1 as minus performs only subtraction in all languages including javascript,hence the first two values are evaluated as 0 and third value is concatenated as a string to the evaluated value
+            console.log(+"1"+"1"+"2");    
+                //OUTPUT:112
+                    //REASON:All three values are evaluated as strings and hence the output is a result of concatenation
+            console.log("A"-"B"+"2");       
+                //OUTPUT:NaN2
+                    //REASON:Arithmetic operations cannot be performed on Strings hence "A" and "B" results in non-defined value NaN and the third value "2" is concatnated to the obtained NaN value
+            console.log("A"-"B"+2);      
+               //OUTPUT:NaN
+                     //REASON:Arithmetic operations cannot be performed on Strings hence "A" and "B" results in non-defined value NaN and third numerical value doesn't support addition to the undefined value
+
+           
+                
+            //QUESTION 2
+           var marks=19;
+            if(marks>90)
+                {      console.log("Your grade is AA");  }
+            else if(marks>80 && marks<=90)
+                {      console.log("Your grade is AB");  }
+            else if(marks>70 && marks<=80)
+                {      console.log("Your grade is BB");  }
+            else if(marks>60 && marks<=70)
+                {      console.log("Your grade is BC");  }
+            else if(marks>50 && marks<=60)
+                {      console.log("Your grade is CC");  }
+            else if(marks>40 && marks<=50)
+                {      console.log("Your grade is CD");  }
+            else if(marks>30 && marks<=40)
+                {      console.log("Your grade is DD");  }
+            else
+                {      console.log("Your grade is FF");  }
+
+</script>
+    </body>
+</html>
